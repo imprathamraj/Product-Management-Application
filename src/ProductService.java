@@ -47,4 +47,14 @@ public class ProductService {
         return productList;
     }
 
+    // Getting product with expired warranty
+    public List<Product> getProductByExpiredWarranty() {
+        List<Product> productList = new ArrayList<>();
+        for(Product p: products){
+            if(p.getWarranty()<2025){
+                productList.add(p);
+            }
+        }
+        return productList;
+    }
 }

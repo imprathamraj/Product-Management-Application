@@ -40,5 +40,12 @@ public class Main {
             System.out.println(p);
         }
 
+        System.out.println("__________________________________________________________________________");
+        // Getting product with expired warranty
+        List<Product> productByExpiredWarranty = productService.getProductByExpiredWarranty();
+        for(Product p : productByExpiredWarranty){
+            System.out.println(p);
+        }
+
     }
 }
