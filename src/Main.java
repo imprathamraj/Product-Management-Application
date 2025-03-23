@@ -49,7 +49,7 @@ public class Main {
 
         System.out.println("__________________________________________________________________________");
         // Getting product with a particular text
-        List<Product> productByText= productService.getProductByText("Phone");
+        List<Product> productByText= productService.getProductByText("PhOnE");
         for(Product p : productByText){
             System.out.println(p);
         }
