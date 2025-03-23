@@ -20,5 +20,9 @@ public class Main {
         for(Product p : products){
             System.out.println(p);
         }
+
+        // Getting product with particular name
+        Product particularProduct = productService.getProduct("Samsung M31");
+        System.out.println(particularProduct);
     }
 }
