@@ -57,4 +57,15 @@ public class ProductService {
         }
         return productList;
     }
+
+    // Getting product with particular text
+    public List<Product> getProductByText(String text) {
+        List<Product> productList = new ArrayList<>();
+        for(Product p: products){
+            if(p.getName().contains(text) || p.getType().contains(text) || p.getPlace().contains(text)){
+                productList.add(p);
+            }
+        }
+        return productList;
+    }
 }
