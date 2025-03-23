@@ -60,9 +60,10 @@ public class ProductService {
 
     // Getting product with particular text
     public List<Product> getProductByText(String text) {
+        String str = text.toLowerCase();
         List<Product> productList = new ArrayList<>();
         for(Product p: products){
-            if(p.getName().contains(text) || p.getType().contains(text) || p.getPlace().contains(text)){
+            if(p.getName().toLowerCase().contains(str) || p.getType().toLowerCase().contains(str) || p.getPlace().toLowerCase().contains(str)){
                 productList.add(p);
             }
         }
