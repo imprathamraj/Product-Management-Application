@@ -13,16 +13,32 @@ public class Main {
         productService.addProduct(new Product("Zebronics","KeyBoard","Desk3",2025));
         productService.addProduct(new Product("Zebronics","Mouse","Desk3",2025));
 
+        System.out.println("__________________________________________________________________________");
         // Getting all products
-        List<Product> products = productService.getAllProduct();
-
+        List<Product> allProducts = productService.getAllProduct();
         // Using enhance for loop to print all product
-        for(Product p : products){
+        for(Product p : allProducts){
             System.out.println(p);
         }
 
+        System.out.println("__________________________________________________________________________");
         // Getting product with particular name
-        Product particularProduct = productService.getProduct("Samsung M31");
-        System.out.println(particularProduct);
+        Product particularProductName = productService.getProductByName("Samsung M31");
+        System.out.println(particularProductName);
+
+        System.out.println("__________________________________________________________________________");
+        // Getting product with particular place
+        List<Product> productByPlace = productService.getProductByPlace("Desk1");
+        for(Product p : productByPlace){
+            System.out.println(p);
+        }
+
+        System.out.println("__________________________________________________________________________");
+        // Getting product with particular type
+        List<Product> productByType = productService.getProductByType("KeyBoard");
+        for(Product p : productByType){
+            System.out.println(p);
+        }
+
     }
 }

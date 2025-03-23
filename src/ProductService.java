@@ -16,7 +16,7 @@ public class ProductService {
     }
 
     // Getting product with a particular name
-    public Product getProduct(String name){
+    public Product getProductByName(String name){
         for(Product p: products){
             if(p.getName().equals(name)){
                 return p;
@@ -24,4 +24,27 @@ public class ProductService {
         }
         return null;
     }
+
+    // Getting product with a particular place
+    public List<Product> getProductByPlace(String place){
+        List<Product> productList = new ArrayList<>();
+        for(Product p: products){
+            if(p.getPlace().equals(place)){
+                productList.add(p);
+            }
+        }
+        return productList;
+    }
+
+    // Getting product with a particular type
+    public List<Product> getProductByType(String type){
+        List<Product> productList = new ArrayList<>();
+        for(Product p: products){
+            if(p.getType().equals(type)){
+                productList.add(p);
+            }
+        }
+        return productList;
+    }
+
 }
