@@ -1,6 +1,17 @@
 # Product-Management-Application
-​The Product Management Application is a demonstration project developed using IntelliJ IDEA. It showcases fundamental product management functionalities, including adding, updating, and viewing products. In this initial version, product data is managed within the application without database integration. Future iterations plan to incorporate a PostgreSQL database and transition to the Spring Boot framework for enhanced functionality and scalability.
+1st Stage: Product-Management-Application
 
-Updated repository link - "https://github.com/imprathamraj/Product-Management-Application-Updated"
+Overview
 
-Final repository link - "https://github.com/imprathamraj/Product-Management-Application-Final"
+The Product Management Application is a demonstration project developed using IntelliJ IDEA. It showcases fundamental product management functionalities, including adding, updating, and viewing products.
+
+In this initial version:
+
+✅ Products are managed within the application without database integration.
+
+✅ Product data is manually created and handled in memory.
+
+✅ The goal is to understand the basic structure before database integration.
+
+
+🔹 Next Stage: [Product-Management-Application-Updated](https://github.com/imprathamraj/Product-Management-Application-Updated)
